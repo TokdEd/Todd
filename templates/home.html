@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>最新文章</h2>
+    {% for post in posts %}
+        <article>
+            <h3><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h3>
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <p>{{ post.content[:200] }}...</p>
+            <p>发布日期: {{ post.date }} | 分类: {{ post.category }}</p>
+            <p>标签: {{ post.tags|join(', ') }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}

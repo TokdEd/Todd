@@ -1,0 +1,123 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2980b9;
+}
+
+main {
+    float: left;
+    width: 70%;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+article {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 20px;
+}
+
+article h3 {
+    color: #2c3e50;
+}
+
+article a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+article a:hover {
+    color: #2980b9;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+}

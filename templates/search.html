@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>搜索结果: {{ query }}</h2>
+    {% if results %}
+        {% for post in results %}
+            <article>
+                <h3><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h3>
+                <p>{{ post.content[:200] }}...</p>
+            </article>
+        {% endfor %}
+    {% else %}
+        <p>没有找到相关结果。</p>
+    {% endif %}
+{% endblock %}
